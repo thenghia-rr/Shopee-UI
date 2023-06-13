@@ -83,16 +83,18 @@ html {
 }
 /* Modal Đăng kí, đăng nhập */
 .modal {
-
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: none;
     animation: fadeIn linear 0.2s;
 }
 
+.modal.active {
+    display: flex;
+}
 .modal__overlay {
    
     position: absolute;
